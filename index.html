@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container bg-warning pt-3 pb-2 rounded-bottom-4" data-aos="fade-down" data-aos-duration="1000">
+            <div class="row">
+                <div class="col-6">
+                    <div class="header-content-1 text-white">
+                        <a href="#canvas" data-bs-toggle="offcanvas"
+                            style="font-size: 20px; text-decoration: none; list-style: none;"
+                            class="ms-lg-2 text-white">
+                            <i class="bi bi-layout-three-columns me-2"></i>
+                            YatraDham
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="header-content-2 text-end text-white">
+                        <span style="font-size: 20px;" class="me-lg-2">
+                            <i class="bi bi-search me-3"></i>
+                            <i class="bi bi-bell-fill"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-start" id="canvas">
+        <div class="offcanvas-header bg-warning">
+            <div class="offcanvas-title d-flex align-items-center">
+                <div class="can-head-img">
+                    <img src="assets/images/yat.png" alt="" width="70px">
+                </div>
+                <div class="can-head-con ms-3 text-white">
+                    <h1 style="font-size: 28px; line-height: 0.8;">Hello</h1>
+                    <span class="fw-semibold" style="font-size: 20px;">TRIGON</span>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body" style="width: 100%;">
+            <div class="canvas-tabs  ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-house-door fw-bold text-danger" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Home</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-geo-alt fw-bold text-primary" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">YatraDham Destination</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-calendar fw-bold text-success" style="font-size: 19px;"></i></span>
+                <h5 class="ms-3">My Bookings</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-calendar fw-bold text-orange" style="font-size: 19px;"></i></span>
+                <h5 class="ms-3">Puja Bookings</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-card-heading fw-bold text-primary" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Manage Bookings</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="fa-regular fa-wallet fw-bold text-warning" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">YatraDham Balance</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-telephone fw-bold text-info" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Contact Us</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-people-fill fw-bold text-info" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Group Inquiry</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-person-circle fw-bold text-secondary" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Your Profile</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-person fw-bold text-success" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">About Us</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-share fw-bold text-dark" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Share</h5>
+            </div>
+            <div class="canvas-tabs ps-4 py-2 d-flex align-items-baseline">
+                <span><i class="bi bi-box-arrow-right fw-bold text-danger" style="font-size: 20px;"></i></span>
+                <h5 class="ms-3">Sign Out</h5>
+            </div>
+        </div>
+    </div>
+    <section class="home-image pt-3 " id="home-image">
+        <div class="container rounded-4" data-aos="zoom-in-down" data-aos-duration="2000">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/somnath.jpg" alt="" class="rounded-4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/rameshwaram.webp" alt="" class="rounded-4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/Srisailam.jpg" alt="" class="rounded-4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/ujja.cms" alt="" class="rounded-4">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="home-service pt-md-5 pt-3" data-aos="fade-up" data-aos-duration="1000" id="home-service">
+        <div class="container">
+            <div class="row px-1">
+                <div class="col-12">
+                    <h3 class="display-5 fw-bold">Services</h3>
+                </div>
+            </div>
+            <div class="row d-none d-xl-block" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="row r-2 gy-3">
+                    <div class="col-4 mt-0 text-orange">
+                        <div class="rounded-4  service-content border-orange text-center py-3 py-sm-5">
+                            <div class="service-icon text-center">
+                                <i class="fa-solid fa-bed"></i>
+                            </div>
+                            <h6 class="text-center">Stay</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-0 text-orange">
+                        <div class="rounded-4  service-content border-orange text-center py-3 py-sm-5">
+                            <div class="service-icon text-center">
+                                <i class="fa-solid fa-om"></i>
+                            </div>
+                            <h6 class="text-center">Puja</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-0 text-orange">
+                        <div class="rounded-4  service-content border-orange text-center py-3 py-sm-5">
+                            <div class="service-icon text-center">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <h6 class="text-center">Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 text-orange">
+                        <div class="rounded-4  service-content border-orange text-center py-3 py-sm-5">
+                            <div class="service-icon text-center">
+                                <i class="fa-solid fa-hands-praying"></i>
+                            </div>
+                            <h6 class="text-center">Darshan</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 text-orange">
+                        <div class="rounded-4  service-content border-orange text-center py-3 py-sm-5">
+                            <div class="service-icon text-center">
+                                <i class="fa-solid fa-gopuram"></i>
+                            </div>
+                            <h6 class="text-center">Temples</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 text-orange">
+                        <div class="rounded-4  service-content border-orange text-center py-3 py-sm-5">
+                            <div class="service-icon text-center">
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <h6 class="text-center">Pandit</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper2 d-xl-none">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class=" rounded-4 text-orange border-orange">
+                            <div class="service-content text-center py-3 py-sm-5">
+                                <div class="service-icon text-center">
+                                    <i class="fa-solid fa-bed"></i>
+                                </div>
+                                <h6 class="text-center">Stay</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 text-orange border-orange">
+                            <div class="service-content text-center py-3 py-sm-5">
+                                <div class="service-icon text-center">
+                                    <i class="fa-solid fa-om"></i>
+                                </div>
+                                <h6 class="text-center">Puja</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 text-orange border-orange">
+                            <div class="service-content text-center py-3 py-sm-5">
+                                <div class="service-icon text-center">
+                                    <i class="fa-solid fa-comments"></i>
+                                </div>
+                                <h6 class="text-center">Reviews</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 text-orange border-orange">
+                            <div class="service-content text-center py-3 py-sm-5">
+                                <div class="service-icon text-center">
+                                    <i class="fa-solid fa-hands-praying"></i>
+                                </div>
+                                <h6 class="text-center">Darshan</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 text-orange border-orange">
+                            <div class="service-content text-center py-3 py-sm-5">
+                                <div class="service-icon text-center">
+                                    <i class="fa-solid fa-gopuram"></i>
+                                </div>
+                                <h6 class="text-center">Temples</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 text-orange border-orange">
+                            <div class="service-content text-center py-3 py-sm-5">
+                                <div class="service-icon text-center">
+                                    <i class="fa-solid fa-person"></i>
+                                </div>
+                                <h6 class="text-center">Pandit</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-5">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-destinations" id="home-destinations" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container py-xl-5 py-3">
+            <div class="row px-1">
+                <div class="col-12">
+                    <h3 class="fw-bold display-5">Yatradham Destination</h3>
+                </div>
+            </div>
+            <div class="row mt-1 mt-xl-3 gx-2 gx-sm-4 px-1" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="col-3">
+                    <div class="destination-content" style="width: 100%;">
+                        <img src="assets/images/dwarka (2).jpg" alt="" width="100%" class="rounded-3">
+                        <div class="desi-location-1 text-center">
+                            <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                Dwarka</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="destination-content">
+                        <img src="assets/images/ujja.cms" alt="" width="100%" class="rounded-3">
+                        <div class="desi-location-1 text-center">
+                            <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                Ujjain</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="destination-content">
+                        <img src="assets/images/jagannath.jpg" alt="" width="100%" class="rounded-3">
+                        <div class="desi-location-1 text-center">
+                            <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                Jagann..</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="destination-content">
+                        <img src="assets/images/pandharpur.jpg" alt="" width="100%" class="rounded-3">
+                        <div class="desi-location-1 text-center">
+                            <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                Pandha..</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper3 mt-4 mt-sm-5" data-aos="zoom-in-down" data-aos-duration="2000">
+                <div class="swiper-wrapper pb-sm-3">
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/vrindavan.jpg" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Vrinda..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/varanasi.jpg" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Varan..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/ayodhya.webp" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Ayodh..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/haridwar.webp" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Harid..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/kedarnath.jpg" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Kedar..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/badrinath.jpg" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Badrin..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/rameshwaram.webp" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Rames..</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-content" style="width: 100%;">
+                            <img src="assets/images/Srisailam.jpg" alt="" width="100%" class="rounded-3">
+                            <div class="desi-location-1 text-center">
+                                <h1 class="fw-bold bg-orange py-2 rounded-3 border border-white border-2">
+                                    Srisai..</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end pt-3 pe-1">
+                    <span style="color: orange; font-size: 18px;" class="fw-bold">See all</span>
+                </div>
+                <div class="col-12 pt-3">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-hotels pb-3" id="home-hotels" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row px-1">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <h3 class="fw-bold display-5">Top Destination</h3>
+                </div>
+            </div>
+            <div class="row align-items-start mt-1 mt-sm-3 px-2 d-md-none">
+                <div class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hotel-content">
+                                <img src="assets/images/hotel-1.jpg" alt="" width="100%" class="rounded-4">
+                                <div class="hotel-mini-head d-md-none mt-2 ps-1">
+                                    <span class="fw-bold">Pandharpur Hotel</span>
+                                </div>
+                                <div class="hotel-mini-info d-flex mt-1 ps-1">
+                                    <div class="stay-time-1 mt-1 h-1 d-flex flex-column">
+                                        <span class="fw-bold">Check-In</span>
+                                        <span class="fw-bold">Check-Out</span>
+                                        <span class="fw-bold">Start from</span>
+                                    </div>
+                                    <div class="stay-time-1 h-2 ms-2 mt-1 d-flex flex-column ">
+                                        <span class="fw-bold">: 24 Hours</span>
+                                        <span class="fw-bold">: 24 Hours</span>
+                                        <span class="fw-bold">: Rs 1120</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hotel-content">
+                                <img src="assets/images/hotel-2.jpg" alt="" width="100%" class="rounded-4">
+                                <div class="hotel-mini-head d-md-none mt-2 ps-1">
+                                    <span class="fw-bold">Kedarnath Hotel</span>
+                                </div>
+                                <div class="hotel-mini-info d-flex mt-1 ps-1">
+                                    <div class="stay-time-1 mt-1 h-1 d-flex flex-column">
+                                        <span class="fw-bold">Check-In</span>
+                                        <span class="fw-bold">Check-Out</span>
+                                        <span class="fw-bold">Start from</span>
+                                    </div>
+                                    <div class="stay-time-1 h-2 ms-2 mt-1 d-flex flex-column ">
+                                        <span class="fw-bold">: 12:00 pm</span>
+                                        <span class="fw-bold">: 10:00 am</span>
+                                        <span class="fw-bold">: Rs 13220</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hotel-content">
+                                <img src="assets/images/hotel-3.jpeg" alt="" width="100%" class="rounded-4">
+                                <div class="hotel-mini-head d-md-none mt-2 ps-1">
+                                    <span class="fw-bold">Somnath Hotel</span>
+                                </div>
+                                <div class="hotel-mini-info d-flex mt-1 ps-1">
+                                    <div class="stay-time-1 mt-1 h-1 d-flex flex-column">
+                                        <span class="fw-bold">Check-In</span>
+                                        <span class="fw-bold">Check-Out</span>
+                                        <span class="fw-bold">Start from</span>
+                                    </div>
+                                    <div class="stay-time-1 h-2 ms-2 mt-1 d-flex flex-column ">
+                                        <span class="fw-bold">: 6:00 am</span>
+                                        <span class="fw-bold">: 11:00 am</span>
+                                        <span class="fw-bold">: Rs 10120</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hotel-content">
+                                <img src="assets/images/hotel-4.jpg" alt="" width="100%" class="rounded-4">
+                                <div class="hotel-mini-head d-md-none mt-2 ps-1">
+                                    <span class="fw-bold">Rameshwa.. Hotel</span>
+                                </div>
+                                <div class="hotel-mini-info d-flex mt-1 ps-1">
+                                    <div class="stay-time-1 mt-1 h-1 d-flex flex-column">
+                                        <span class="fw-bold">Check-In</span>
+                                        <span class="fw-bold">Check-Out</span>
+                                        <span class="fw-bold">Start from</span>
+                                    </div>
+                                    <div class="stay-time-1 h-2 ms-2 mt-1 d-flex flex-column ">
+                                        <span class="fw-bold">: 2:00 pm</span>
+                                        <span class="fw-bold">: 4:00 pm</span>
+                                        <span class="fw-bold">: Rs 19120</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hotel-content">
+                                <img src="assets/images/hotel-5.jpg" alt="" width="100%" class="rounded-4">
+                                <div class="hotel-mini-head d-md-none mt-2 ps-1">
+                                    <span class="fw-bold">Srisailam Hotel</span>
+                                </div>
+                                <div class="hotel-mini-info d-flex mt-1 ps-1">
+                                    <div class="stay-time-1 mt-1 h-1 d-flex flex-column">
+                                        <span class="fw-bold">Check-In</span>
+                                        <span class="fw-bold">Check-Out</span>
+                                        <span class="fw-bold">Start from</span>
+                                    </div>
+                                    <div class="stay-time-1 h-2 ms-2 mt-1 d-flex flex-column ">
+                                        <span class="fw-bold">: 9:00 am</span>
+                                        <span class="fw-bold">: 4:00 pm</span>
+                                        <span class="fw-bold">: Rs 15120</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hotel-content">
+                                <img src="assets/images/hotel-6.webp" alt="" width="100%" class="rounded-4">
+                                <div class="hotel-mini-head d-md-none mt-2 ps-1">
+                                    <span class="fw-bold">Badrinath Hotel</span>
+                                </div>
+                                <div class="hotel-mini-info d-flex mt-1 ps-1">
+                                    <div class="stay-time-1 mt-1 h-1 d-flex flex-column">
+                                        <span class="fw-bold">Check-In</span>
+                                        <span class="fw-bold">Check-Out</span>
+                                        <span class="fw-bold">Start from</span>
+                                    </div>
+                                    <div class="stay-time-1 h-2 ms-2 mt-1 d-flex flex-column ">
+                                        <span class="fw-bold">: 5:00 pm</span>
+                                        <span class="fw-bold">: 9:00 1m</span>
+                                        <span class="fw-bold">: Rs 20120</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end pt-2 pe-1" style="z-index: 2;">
+                        <span style="color: orange; font-size: 18px;" class="fw-bold">See all</span>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-md-block mt-3" data-aos="flip-right" data-aos-duration="2000">
+                <div class="swiper mySwiper5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row align-items-center justify-content-lg-between px-2">
+                                <div class="col-6 hotel-img">
+                                    <img src="assets/images/hotel-1.jpg" alt="" width="100%" class="rounded-4">
+                                </div>
+                                <div class="col-5 ms-md-3 ms-lg-0">
+                                    <div class="hotel-content-2">
+                                        <div class="hotel-heading">
+                                            <span class="fw-bold">Pandharpur Hotel</span>
+                                        </div>
+                                        <div class="hotel-info d-flex mt-2">
+                                            <div class="check-in h-1 d-flex flex-column">
+                                                <span class="fw-bold">Check-In</span>
+                                                <span class="fw-bold mt-lg-3">Check-Out</span>
+                                                <span class="fw-bold mt-lg-3">Start from</span>
+                                            </div>
+                                            <div class="hotel-rate h-2 ms-4 d-flex flex-column ">
+                                                <span class="fw-bold">: 24 Hours</span>
+                                                <span class="fw-bold mt-lg-3">: 24 Hours</span>
+                                                <span class="fw-bold mt-lg-3">: Rs 1120</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row align-items-center justify-content-lg-between px-2">
+                                <div class="col-6 hotel-img">
+                                    <img src="assets/images/hotel-7.webp" alt="" width="100%" class="rounded-4">
+                                </div>
+                                <div class="col-5 ms-md-3 ms-lg-0">
+                                    <div class="hotel-content-2">
+                                        <div class="hotel-heading">
+                                            <span class="fw-bold">Kedarnath Hotel</span>
+                                        </div>
+                                        <div class="hotel-info d-flex mt-2">
+                                            <div class="check-in h-1 d-flex flex-column">
+                                                <span class="fw-bold">Check-In</span>
+                                                <span class="fw-bold mt-lg-3">Check-Out</span>
+                                                <span class="fw-bold mt-lg-3">Start from</span>
+                                            </div>
+                                            <div class="hotel-rate h-2 ms-4 d-flex flex-column ">
+                                                <span class="fw-bold">: 5:00 am</span>
+                                                <span class="fw-bold mt-lg-3">: 6:00 pm</span>
+                                                <span class="fw-bold mt-lg-3">: Rs 19120</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row align-items-center justify-content-lg-between px-2">
+                                <div class="col-6 hotel-img">
+                                    <img src="assets/images/hotel-3.jpeg" alt="" width="100%" class="rounded-4">
+                                </div>
+                                <div class="col-5 ms-md-3 ms-lg-0">
+                                    <div class="hotel-content-2">
+                                        <div class="hotel-heading">
+                                            <span class="fw-bold">Somnath Hotel</span>
+                                        </div>
+                                        <div class="hotel-info d-flex mt-2">
+                                            <div class="check-in h-1 d-flex flex-column">
+                                                <span class="fw-bold">Check-In</span>
+                                                <span class="fw-bold mt-lg-3">Check-Out</span>
+                                                <span class="fw-bold mt-lg-3">Start from</span>
+                                            </div>
+                                            <div class="hotel-rate h-2 ms-4 d-flex flex-column ">
+                                                <span class="fw-bold">: 7:00 pm</span>
+                                                <span class="fw-bold mt-lg-3">: 9:00 am</span>
+                                                <span class="fw-bold mt-lg-3">: Rs 29120</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row align-items-center justify-content-lg-between px-2">
+                                <div class="col-6 hotel-img">
+                                    <img src="assets/images/hotel-4.jpg" alt="" width="100%" class="rounded-4">
+                                </div>
+                                <div class="col-5 ms-md-3 ms-lg-0">
+                                    <div class="hotel-content-2">
+                                        <div class="hotel-heading">
+                                            <span class="fw-bold">Rameshwa.. Hotel</span>
+                                        </div>
+                                        <div class="hotel-info d-flex mt-2">
+                                            <div class="check-in h-1 d-flex flex-column">
+                                                <span class="fw-bold">Check-In</span>
+                                                <span class="fw-bold mt-lg-3">Check-Out</span>
+                                                <span class="fw-bold mt-lg-3">Start from</span>
+                                            </div>
+                                            <div class="hotel-rate h-2 ms-4 d-flex flex-column ">
+                                                <span class="fw-bold">: 9:00 am</span>
+                                                <span class="fw-bold mt-lg-3">: 12:00 pm</span>
+                                                <span class="fw-bold mt-lg-3">: Rs 12120</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row align-items-center justify-content-lg-between px-2">
+                                <div class="col-6 hotel-img">
+                                    <img src="assets/images/hotel-5.jpg" alt="" width="100%" class="rounded-4">
+                                </div>
+                                <div class="col-5 ms-md-3 ms-lg-0">
+                                    <div class="hotel-content-2">
+                                        <div class="hotel-heading">
+                                            <span class="fw-bold">Srisailam Hotel</span>
+                                        </div>
+                                        <div class="hotel-info d-flex mt-2">
+                                            <div class="check-in h-1 d-flex flex-column">
+                                                <span class="fw-bold">Check-In</span>
+                                                <span class="fw-bold mt-lg-3">Check-Out</span>
+                                                <span class="fw-bold mt-lg-3">Start from</span>
+                                            </div>
+                                            <div class="hotel-rate h-2 ms-4 d-flex flex-column ">
+                                                <span class="fw-bold">: 10:00 am</span>
+                                                <span class="fw-bold mt-lg-3">: 12:00 pm</span>
+                                                <span class="fw-bold mt-lg-3">: Rs 15120</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end pt-2 pe-1" style="z-index: 2;">
+                        <span style="color: orange; font-size: 20px;" class="fw-bold">See all</span>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer pt-4" id="footer">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12 rounded-top-4 border py-4 text-center" style="background-color: orange; ">
+                    <span class="p-2 p-md-3 rounded-circle"><i class="bi bi-emoji-smile-fill"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            1400: {
+                slidesPerView: 1,
+                spaceBetween: 40,
+            },
+        },
+    });
+</script>
